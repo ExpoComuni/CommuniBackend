@@ -1,15 +1,10 @@
 {
     "version": 2,
+    "buildCommand": "tsc && node -r tsconfig-paths/register dist/index.js",
     "builds": [
-        {
-          "src": "src/index.ts",
-          "use": "@vercel/node"
-        }
-      ],
-    "routes": [
       {
-        "src": "/(.*)",
-        "dest": "src/index.ts"
+        "src": "src/index.ts",
+        "use": "@vercel/node"
       }
     ]
   }
