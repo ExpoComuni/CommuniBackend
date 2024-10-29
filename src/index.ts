@@ -1,10 +1,10 @@
 import express from "express";
+import "reflect-metadata";
+import "tsconfig-paths/register";
 import { config } from "dotenv";
 import SQLDataSource from "./config/NeonDataSource";
 import MongoDataSource from "./config/MongoDataSource";
 import routes from "./routes";
-import "reflect-metadata";
-import 'tsconfig-paths/register';
 import cors from "cors";  // Importa cors
 config();
 
@@ -18,7 +18,7 @@ app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
 app.use("/", async (req, res) => {
-  res.json({msg:"hello world"})
+  res.json({msg:"hello communier"})
 })
 
 
@@ -35,9 +35,9 @@ SQLDataSource.initialize()
       .catch((error: any) => console.error("Error connecting to MongoDB:", error));
 
     // Set up routes dynamically using the route configuration
-    // routes.map((route) => {
-    //   app.use(route.path, route.router);
-    // });
+    routes.map((route) => {
+      app.use(route.path, route.router);
+    });
 
     // Start the server
     app.listen(PORT, () => {
