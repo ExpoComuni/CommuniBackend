@@ -2,7 +2,7 @@ import express from "express";
 import { config } from "dotenv";
 import SQLDataSource from "./config/NeonDataSource";
 import MongoDataSource from "./config/MongoDataSource";
-import routes from "@/routes";
+import routes from "./routes";
 import "reflect-metadata";
 import 'tsconfig-paths/register';
 import cors from "cors";  // Importa cors
