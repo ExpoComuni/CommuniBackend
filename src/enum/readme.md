@@ -1,0 +1,2 @@
+# Enums
+The Enum is used to represent some kind of options. The best example of the use of this structure is the role of the user, there are only two possible options so we limit the user to those options, if it doesnt fit will throw an error.
