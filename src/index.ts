@@ -17,6 +17,10 @@ app.use(cors());
 app.use(express.json({limit: '50mb'})); 
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
+app.use("/", async (req, res) => {
+  res.json({msg:"hello world"})
+})
+
 
 // Initialize SQL Database
 SQLDataSource.initialize()
