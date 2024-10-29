@@ -7,15 +7,15 @@
   "skipLibCheck": true,
   "forceConsistentCasingInFileNames": true,
   "outDir": "./dist",
-  "rootDir": "./api",
-  "baseUrl": "./api",
+  "rootDir": "./src",
+  "baseUrl": "./src",
   "paths": {
     "@/*": ["*"]
   },
   "experimentalDecorators": true,
   "emitDecoratorMetadata": true
 },
-"include": ["api/**/*.ts"],
+"include": ["src/**/*.ts"],
 "exclude": ["node_modules"]
 
 }
