@@ -5,6 +5,9 @@ dotenv.config();
 
 const url = process.env.neonDB;
 
+
+console.log(url)
+
 const SQLDataSource = new DataSource({
   type: "postgres",
   url: url,

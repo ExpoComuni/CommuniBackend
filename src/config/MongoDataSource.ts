@@ -5,6 +5,8 @@ dotenv.config();
 
 const mongoUrl = process.env.mongoDB;
 
+console.log(mongoUrl)
+
 const MongoDataSource = new DataSource({
   type: "mongodb",
   url: mongoUrl,
