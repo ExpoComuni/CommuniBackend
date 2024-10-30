@@ -1,7 +1,7 @@
 import { Router } from "express";
 import DiscussionService from "../services/discussion.services";
 import UserService from "../services/user.services";
-import { DiscussionTopics } from "@/enum/discussion";
+import { DiscussionTopics } from "../enum/discussion";
 
 const router = Router();
 const discussionService = new DiscussionService();

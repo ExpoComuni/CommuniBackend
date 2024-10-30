@@ -3,7 +3,7 @@ import { Repository } from "typeorm";
 import { Comment } from "../entity/Sql/comment";
 import { Discussion } from "../entity/Sql/discussion";
 import { User } from "../entity/Sql/User";
-import DataSource from "@/config/NeonDataSource";
+import DataSource from "../config/NeonDataSource";
 
 class CommentService {
   private commentRepository: Repository<Comment>;

@@ -1,4 +1,4 @@
-import { ReportType } from "@/enum/reportType";
+import { ReportType } from "../enum/reportType";
 
 export interface ReportInterface {
     id: string;

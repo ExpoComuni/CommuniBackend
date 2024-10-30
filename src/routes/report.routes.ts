@@ -1,7 +1,7 @@
 import { Router, Request, Response } from "express";
-import ReportServices from "@/services/reports.services";
-import { ReportInterface } from "@/interfaces/report";
-import UserService from "@/services/user.services";
+import ReportServices from "../services/reports.services";
+import { ReportInterface } from "../interfaces/report";
+import UserService from "../services/user.services";
 
 const router = Router();
 const reportServices = new ReportServices();

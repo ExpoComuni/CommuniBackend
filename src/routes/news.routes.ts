@@ -1,5 +1,5 @@
 import { Router } from "express";
-import NewsService from "@/services/news.services";
+import NewsService from "../services/news.services";
 
 const router = Router();
 const newsService = new NewsService();

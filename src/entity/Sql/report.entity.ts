@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
-import { ReportType } from "@/enum/reportType";
+import { ReportType } from "../../enum/reportType";
 import { User } from "./User";
 
 @Entity()

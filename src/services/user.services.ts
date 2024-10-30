@@ -1,10 +1,10 @@
 import { Repository } from "typeorm";
 import * as bcrypt from "bcryptjs";
 import * as jwt from "jsonwebtoken";
-import { User } from "@/entity/Sql/User";
-import { Session } from "@/entity/Sql/Session";
-import DataSource from "@/config/NeonDataSource";
-import { UserInput } from "@/interfaces/user";
+import { User } from "../entity/Sql/User";
+import { Session } from "../entity/Sql/Session";
+import DataSource from "../config/NeonDataSource";
+import { UserInput } from "../interfaces/user";
 
 class UserService {
   private userRepository: Repository<User>;

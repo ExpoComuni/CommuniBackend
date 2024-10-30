@@ -1,6 +1,6 @@
 import { Entity, ObjectIdColumn, ObjectId, Column } from "typeorm";
 import { IsEnum } from "class-validator";
-import { NewsTags } from "@/enum/newsTags";
+import { NewsTags } from "../../enum/newsTags";
 
 @Entity()
 export class News {

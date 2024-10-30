@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from "typeorm";
-import { Role } from "@/enum/role";
+import { Role } from "../../enum/role";
 import { Report } from "./report.entity";
 import { Discussion } from "./discussion";  // Importing Discussion entity
 import { Comment } from "./comment";  // Importing Comment entity

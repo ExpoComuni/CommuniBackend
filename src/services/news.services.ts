@@ -1,6 +1,6 @@
 import { Repository } from "typeorm";
-import { News } from "@/entity/MongoDB/news";
-import MongoDataSource from "@/config/MongoDataSource";
+import { News } from "../entity/MongoDB/news";
+import MongoDataSource from "../config/MongoDataSource";
 
 
 class NewsService {

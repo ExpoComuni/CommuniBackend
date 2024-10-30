@@ -1,6 +1,6 @@
 import { Repository } from "typeorm";
-import { Event } from "@/entity/MongoDB/Event";
-import MongoDataSource from "@/config/MongoDataSource";
+import { Event } from "../entity/MongoDB/Event";
+import MongoDataSource from "../config/MongoDataSource";
 
 class EventService {
   private eventRepository: Repository<Event>;

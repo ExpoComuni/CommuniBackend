@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany, CreateDateColumn } from "typeorm";
 import { User } from "./User";
 import { Comment } from "./comment";
-import { DiscussionTopics } from "@/enum/discussion";
+import { DiscussionTopics } from "../../enum/discussion";
 
 @Entity()
 export class Discussion {

@@ -1,7 +1,7 @@
 import { Repository } from "typeorm";
-import { ReportInterface, ReportInterfaceOut } from "@/interfaces/report";
-import { Report } from "@/entity/Sql/report.entity";
-import DataSource from "@/config/NeonDataSource";
+import { ReportInterface, ReportInterfaceOut } from "../interfaces/report";
+import { Report } from "../entity/Sql/report.entity";
+import DataSource from "../config/NeonDataSource";
 
 class ReportServices {
     private reportRepository: Repository<Report>;
