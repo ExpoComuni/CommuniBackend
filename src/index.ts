@@ -36,10 +36,10 @@ SQLDataSource.initialize()
       .catch((error: any) => console.error("Error connecting to MongoDB:", error));
 
     // Set up routes dynamically using the route configuration
-    // routes.map((route) => {
-    //   app.use(route.path, route.router);
-    // });
-    app.use("/news", newsRoutes)
+    routes.map((route) => {
+      app.use(route.path, route.router);
+    });
+    // app.use("/news", newsRoutes)
 
     // Start the server
     app.listen(PORT, () => {
