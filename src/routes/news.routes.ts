@@ -18,8 +18,8 @@ router.post("/", async (req, res) => {
 // Get all news entries
 router.get("/", async (req, res) => {
   try {
-    // const newsList = await newsService.getAllNews();
-    res.json({msg:"hello world"});
+    const newsList = await newsService.getAllNews();
+    res.json(newsList);
   } catch (error: any) {
     res.status(500).json({ message: "Failed to retrieve news", error: error.message });
   }
