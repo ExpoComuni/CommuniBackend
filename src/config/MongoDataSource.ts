@@ -10,7 +10,7 @@ const MongoDataSource = new DataSource({
   url: mongoUrl,
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  entities: ["src/entity/MongoDB/*.ts"],
+  entities: ["src/entity/MongoDB/*.js"],
   synchronize: true,
   logging: false,
 });
