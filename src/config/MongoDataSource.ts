@@ -1,6 +1,6 @@
 import * as dotenv from "dotenv";
 import { DataSource } from "typeorm";
-
+//.env configuration
 dotenv.config();
 
 const mongoUrl = process.env.mongoDB;
