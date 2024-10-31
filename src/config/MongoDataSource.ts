@@ -11,7 +11,7 @@ const MongoDataSource = new DataSource({
   url: mongoUrl,
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  entities: ["src/entity/MongoDBs/*.js"],
+  entities: ["src/entity/MongoDB/*.js"],
   synchronize: true,
   logging: false,
 });
