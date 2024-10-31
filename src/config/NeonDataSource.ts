@@ -11,7 +11,7 @@ console.log(url)
 const SQLDataSource = new DataSource({
   type: "postgres",
   url: url,
-  entities: ["src/entity/Sql/*.ts"],
+  entities: ["src/entity/Sql/*.js"],
   synchronize: true,
   logging: false,
 });
