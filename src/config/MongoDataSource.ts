@@ -1,5 +1,7 @@
 import * as dotenv from "dotenv";
 import { DataSource } from "typeorm";
+import { Event } from "../entity/MongoDB/Event";
+import { News } from "../entity/MongoDB/news";
 
 dotenv.config();
 
@@ -10,7 +12,7 @@ const MongoDataSource = new DataSource({
   url: mongoUrl,
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  entities: ["src/entity/MongoDB/*.js"],
+  entities: [Event, News],
   synchronize: true,
   logging: false,
 });
