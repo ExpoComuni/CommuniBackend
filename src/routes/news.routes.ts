@@ -10,8 +10,8 @@ router.post("/", async (req, res) => {
     const news = await newsService.createNews(req.body);
     res.status(201).json(news);
   } catch (error: any) {
-    res.status(500).json({ message: "Failed to create news", error: error.message });
     console.error(error)
+    res.status(500).json({ message: "Failed to create news", error: error.message });
   }
 });
 
@@ -21,6 +21,7 @@ router.get("/", async (req, res) => {
     const newsList = await newsService.getAllNews();
     res.json(newsList);
   } catch (error: any) {
+    console.error(error)
     res.status(500).json({ message: "Failed to retrieve news", error: error.message });
   }
 });
@@ -36,6 +37,7 @@ router.get("/:id", async (req, res) => {
       res.json(news);
     }
   } catch (error: any) {
+    console.error(error)
     res.status(500).json({ message: "Failed to retrieve news", error: error.message });
   }
 });
@@ -51,6 +53,7 @@ router.put("/:id", async (req, res) => {
       res.json(updatedNews);
     }
   } catch (error: any) {
+    console.error(error)
     res.status(500).json({ message: "Failed to update news", error: error.message });
   }
 });
@@ -66,6 +69,7 @@ router.delete("/:id", async (req, res) => {
       res.status(404).json({ message: "News not found" });
     }
   } catch (error: any) {
+    console.error(error)
     res.status(500).json({ message: "Failed to delete news", error: error.message });
   }
 });
