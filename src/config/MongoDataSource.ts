@@ -12,7 +12,7 @@ const MongoDataSource = new DataSource({
   url: mongoUrl,
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  entities: [Event, News],
+  entities: [__dirname + '/entity/**/*.js'],
   synchronize: true,
   logging: false,
 });
