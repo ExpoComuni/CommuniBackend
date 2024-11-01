@@ -3,6 +3,7 @@ import { DataSource } from "typeorm";
 //.env configuration
 dotenv.config();
 
+//url
 const mongoUrl = process.env.mongoDB;
 console.log(mongoUrl)
 
